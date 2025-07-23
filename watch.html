@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Watch Shop • Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html">Home</a><a href="shop.html">Shop</a>
+      <a href="product.html">Product</a>
+      <span class="cart">Cart <span id="cart-count" class="cart-count">0</span></span>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Welcome to Watch Hub</h1>
+    <p>Explore our curated collection of premium timepieces.</p>
+    <a href="shop.html"><button>Start Shopping</button></a>
+  </div>
+  <footer>
+    <div class="container">© 2025 Watch Hub</div>
+  </footer>
+</body>
+</html>
+<!doctype html><html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watch Shop • Shop</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header><nav class="container"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="product.html">Product</a><span class="cart">Cart <span id="cart-count" class="cart-count">0</span></span></nav></header>
+  <div class="container">
+    <h1>Our Watches</h1>
+    <div class="product-grid">
+      <!-- repeat for each product -->
+      <div class="card">
+        <img src="C:\Users\PC\Documents\classic watch.jpg" alt="Watch 1">
+        <h3>Classic Watch</h3>
+        <p>$199</p>
+        <a href="product.html"><button>View</button></a>
+      </div>
+      <div class="card">
+        <img src="C:\Users\PC\Documents\watch.jpg" alt="Watch 2">
+        <h3>Sport Watch</h3>
+        <p>$249</p>
+        <a href="product.html"><button>View</button></a>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </div>
+  <footer><div class="container">© 2025 Watch Hub</div></footer>
+</body>
+</html>
+<!doctype html><html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watch Shop • Product</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header><nav class="container"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="product.html">Product</a><span class="cart">Cart <span id="cart-count" class="cart-count">0</span></span></nav></header>
+  <div class="container">
+    <div class="card" style="max-width:600px; margin:auto;">
+      <img src="C:\Users\PC\Documents\best watch.jpg" alt="Watch Detail">
+      <h2>Classic Watch</h2>
+      <p>$199</p>
+      <p>Simple and elegant design with a genuine leather strap.</p>
+      <button id="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+    <div class="container">
+    <div class="card" style="max-width:600px; margin:auto;">
+      <img src="C:\Users\PC\Documents\WWWW.jpg" alt="Watch Detail">
+      <h2>Classic Watch</h2>
+      <p>$199</p>
+      <p>Simple and elegant design with a genuine leather strap.</p>
+      <button id="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+      <div class="container">
+    <div class="card" style="max-width:600px; margin:auto;">
+      <img src="C:\Users\PC\Documents\smart.jpg" alt="Watch Detail">
+      <h2>Classic Watch</h2>
+      <p>$199</p>
+      <p>Simple and elegant design with a genuine leather strap.</p>
+      <button id="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <footer><div class="container">© 2025 Watch Hub</div></footer>
+  <script>
+    let cartCount = localStorage.getItem('cartCount') || 0;
+    const span = document.getElementById('cart-count');
+    span.textContent = cartCount;
+    document.getElementById('add-to-cart').onclick = () => {
+      cartCount = parseInt(cartCount) + 1;
+      localStorage.setItem('cartCount', cartCount);
+      span.textContent = cartCount;
+    };
+  </script>
+</body>
+</html>
